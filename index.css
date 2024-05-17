@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #EEEEEE;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: rgba(29, 43, 83,0.4); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: rgba(29, 43, 83, 0.4);
+}
+
+#nav h4{
+    text-transform: uppercase;
+    font: 500;
+    cursor: pointer;
+    font: 1.15vw;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+#cursor{
+    height: 15px;
+    width: 15px;
+    background-color: greenyellow;
+    border-radius: 50px;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursorBlur{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border-radius: 800px;
+    position: fixed;
+    filter: blur(150px);
+    z-index: 9;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+#page1 h1::before{
+    content: "AYUSH HURKAT";
+    position: absolute;
+    color:#222831;
+    left: -4px;
+    top: -4px;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#page1 h1{
+    font-size: 120px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+}
+
+#page1 h2{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid greenyellow;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 30px 10px greenyellow;
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+#scroller{
+    /* background-color: #252A34; */
+    box-sizing: content-box;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller_in{
+    width: auto;
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite ;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 30px;
+    color: transparent;
+    -webkit-text-stroke:2px greenyellow ;
+    /* transition: all linear 0.5s; */
+    transition: ease-in-out 1s;
+}
+
+#scroller h4:hover{
+    color: greenyellow;
+}
+
+#page2{
+    margin-top: 150px;
+}
+
+#about {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#about h3::before {
+    content: "ABOUT ME";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    color:black;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#about h3 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+    z-index: 1;
+}
+
+
+#aboutme {
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    z-index: 10;
+    justify-content: space-evenly;
+    
+}
+
+#aboutme img {
+    height: auto;
+    width: 100%;
+    gap: 5px;
+    max-width: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 30px 10px greenyellow;
+}
+
+#aboutmedesc {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 30px 10px greenyellow;
+    margin-top: 20px;
+}
+
+#aboutmedesc p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#page3{
+    margin-top: 150px;
+}
+
+#resume {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#resume h3::before {
+    content: "RESUME";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    color:black;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#resume h3 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+    z-index: 1;
+}
+
+#resumedisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#resumedisplay embed {
+    max-width: auto;
+    height: 1000px; 
+    box-shadow: 0 0 30px 10px greenyellow;
+    margin-top: 50px;
+}
+
+#page4{
+    margin-top: 150px;
+}
+
+#skills {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#skills h3::before {
+    content: "SKILLS";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    color:black;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#skills h3 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+    z-index: 1;
+}
+
+#skillset1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+}
+#skillset2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+}
+#skillset3{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#skillimg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid yellowgreen;
+    box-shadow: 0 0 10px 2px greenyellow;
+    margin-bottom: 20px;
+}
+
+#skillname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page5{
+    margin-top: 150px;
+}
+
+#contactme {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+#contactme h3::before {
+    content: "CONTACT ME";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    color:black;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#contactme h3 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+    z-index: 1;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contactdetails{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#contactdetails img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid yellowgreen;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 400px) {
+    #aboutme {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutme img {
+        max-width: 200px;
+    }
+}
+
+@keyframes scroll{
+    from{
+        tranform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
