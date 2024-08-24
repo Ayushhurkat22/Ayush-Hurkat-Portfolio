@@ -1,20 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #EEEEEE;
 }
 
-html,body{
-    height: 100%;
-    width: 100%;
+#cursor {
+    height: 15px;
+    width: 15px;
+    border: 2px solid greenyellow; /* Create a boundary outline */
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    pointer-events: none; /* Ensure cursor does not interfere with mouse events */
 }
 
-#nav{
+#cursorBlur {
+    height: 200px;
+    width: 200px;
+    border: 2px solid greenyellow; /* Matching the border color with the cursor */
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(150px);
+    z-index: 9;
+    pointer-events: none; /* Ensure blur effect does not interfere with mouse events */
+}
+
+
+
+#nav {
     height: 100px;
     width: 100%;
-    /* background-color: rgba(29, 43, 83,0.4); */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -26,41 +43,42 @@ html,body{
     background-color: rgba(29, 43, 83, 0.4);
 }
 
-#nav h4{
+#nav h4 {
     text-transform: uppercase;
-    font: 500;
+    font-weight: 500;
     cursor: pointer;
-    font: 1.15vw;
+    font-size: 1.15vw;
 }
 
-video{
+video {
     height: 100%;
     width: 100%;
     position: fixed;
     object-fit: cover;
-    filter: blur(4px);
-    z-index: -1;
+    filter: blur(5px);
+    background: rgba(20, 20, 100, 0.5);
+    z-index: 0
 }
 
-#main{
+#main {
     position: relative;
     background-color: rgba(0, 0, 0, 0.37);
 }
 
-#cursor{
+#cursor {
     height: 15px;
     width: 15px;
     background-color: greenyellow;
-    border-radius: 50px;
+    border-radius: 50%;
     position: fixed;
     z-index: 99;
 }
 
-#cursorBlur{
+#cursorBlur {
     height: 200px;
     width: 200px;
     background-color: greenyellow;
-    border-radius: 800px;
+    border-radius: 50%;
     position: fixed;
     filter: blur(150px);
     z-index: 9;
@@ -70,35 +88,37 @@ a:link {
     text-decoration: none;
 }
 
-#page1{
+#page1 {
     height: 100vh;
     width: 100%;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
     z-index: 10;
+    cursor: none; 
 }
-#page1 h1::before{
+
+#page1 h1::before {
     content: "AYUSH HURKAT";
     position: absolute;
-    color:#222831;
+    color: #222831;
     left: -4px;
     top: -4px;
     -webkit-text-stroke: 2px greenyellow;
     z-index: -1;
 }
 
-#page1 h1{
+#page1 h1 {
     font-size: 120px;
     font-weight: 900;
     position: relative;
     color: #EEEEEE;
 }
 
-#page1 h2{
+#page1 h2 {
     font-size: 30px;
     font-weight: 900;
     margin-top: 10px;
@@ -109,50 +129,52 @@ a:link {
     box-shadow: 0 0 30px 10px greenyellow;
 }
 
-
-#page2{
+#page2 {
     height: 100vh;
     width: 100%;
     z-index: 10;
+    cursor: none; 
 }
 
-#scroller{
-    /* background-color: #252A34; */
-    box-sizing: content-box;
+#scroller {
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
     position: relative;
     z-index: 10;
+    cursor: none; 
 }
 
-#scroller::-webkit-scrollbar{
+#scroller::-webkit-scrollbar {
     display: none;
 }
-#scroller_in{
-    width: auto;
+
+#scroller_in {
     display: inline-block;
     white-space: nowrap;
-    animation: scroll 20s linear infinite ;
+    animation: scroll 20s linear infinite;
 }
-#scroller h4{
+
+#scroller h4 {
     display: inline-block;
     font-size: 70px;
     font-weight: 900;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-right: 30px;
     color: transparent;
-    -webkit-text-stroke:2px greenyellow ;
-    /* transition: all linear 0.5s; */
+    -webkit-text-stroke: 2px greenyellow;
     transition: ease-in-out 1s;
 }
 
-#scroller h4:hover{
+#scroller h4:hover {
     color: greenyellow;
 }
 
-#page2{
+#page2 {
     margin-top: 150px;
+    cursor: none; 
+    
+    z-index: 10;
 }
 
 #about {
@@ -168,7 +190,7 @@ a:link {
     position: absolute;
     left: -4px;
     top: -4px;
-    color:black;
+    color: black;
     -webkit-text-stroke: 2px greenyellow;
     z-index: -1;
 }
@@ -181,7 +203,7 @@ a:link {
     z-index: 1;
 }
 
-
+/* Default styles for desktop */
 #aboutme {
     height: auto;
     width: 100%;
@@ -192,13 +214,12 @@ a:link {
     margin-top: 50px;
     z-index: 10;
     justify-content: space-evenly;
-    
+    cursor: none;
 }
 
 #aboutme img {
     height: auto;
     width: 100%;
-    gap: 5px;
     max-width: 280px;
     border-radius: 20px;
     object-fit: cover;
@@ -221,16 +242,52 @@ a:link {
     line-height: 1.5;
 }
 
-#page3{
-    margin-top: 150px;
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    #aboutme {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    #aboutme img {
+        max-width: 30%;
+        margin-bottom: 40px;
+    }
+
+    #aboutmedesc {
+        max-width: 90%;
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+    #aboutme img {
+        max-width: 70%;
+        margin-bottom: 15px;
+    }
+
+    #aboutmedesc {
+        max-width: 95%;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
+
+
+#page3 {
+    margin-top: 300px;
+    z-index: 10;
 }
 
 #resume {
-    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
 #resume h3::before {
@@ -238,7 +295,7 @@ a:link {
     position: absolute;
     left: -4px;
     top: -4px;
-    color:black;
+    color: black;
     -webkit-text-stroke: 2px greenyellow;
     z-index: -1;
 }
@@ -251,23 +308,41 @@ a:link {
     z-index: 1;
 }
 
-#resumedisplay{
+.resume-view {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+
+.resumeDownload {
+    z-index: 10;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    width: 300px;
+    height: 100px;
+    border: 2px solid greenyellow;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px 10px greenyellow;
+    text-align: center;
 }
 
-#resumedisplay embed {
-    max-width: auto;
-    height: 1000px; 
-    box-shadow: 0 0 30px 10px greenyellow;
-    margin-top: 50px;
+.resumeDownload a {
+    z-index: 10;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
-#page4{
+#page4 {
     margin-top: 150px;
+    z-index: 10;
 }
 
 #skills {
@@ -278,6 +353,7 @@ a:link {
     position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
+    z-index: 10;
 }
 
 #skills h3::before {
@@ -303,24 +379,28 @@ a:link {
     align-items: center;
     justify-content: space-around;
     margin: 40px;
+    z-index: 10;
 }
 #skillset2{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 40px;
+    z-index: 10;
 }
 #skillset3{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 40px;
+    z-index: 10;
 }
 
 #skill{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    z-index: 10;
 }
 
 #skillimg img {
@@ -331,16 +411,19 @@ a:link {
     border: 2px solid yellowgreen;
     box-shadow: 0 0 10px 2px greenyellow;
     margin-bottom: 20px;
+    z-index: 10;
 }
 
 #skillname{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
-#page5{
-    margin-top: 150px;
+#page6{
+    margin-top: 300px;
+    z-index: 10;
 }
 
 #contactme {
@@ -349,6 +432,7 @@ a:link {
     align-items: center;
     justify-content: center;
     position: relative;
+    z-index: 10;
     margin-top: 100px;
 }
 
@@ -374,6 +458,7 @@ a:link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
 }
 
 #contactdetails{
@@ -381,6 +466,7 @@ a:link {
     display: flex;
     align-items: center;
     padding: 20px;
+    z-index: 10;
 }
 
 #contactdetails img{
@@ -390,6 +476,7 @@ a:link {
     overflow: hidden;
     border: 2px solid yellowgreen;
     margin-right: 20px;
+    z-index: 10;
 }
 
 @media screen and (max-width: 400px) {
@@ -411,3 +498,128 @@ a:link {
         transform: translateX(-100%);
     }
 }
+
+
+#starry-background {
+    position: fixed; /* Make it fixed to stay in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Place it behind the content */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: blink 1.5s infinite ease-in-out;
+    opacity: 0;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.meteoroid {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    animation: meteoroidAnimation linear infinite;
+    box-shadow: 0 0 20px 5px rgba(255, 165, 0, 0.7); /* Orangish-yellow tail */
+}
+
+@keyframes meteoroidAnimation {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100vw) translateY(100vh); /* Default direction SE */
+    }
+}
+
+.meteoroid.shooting-s {
+    animation-name: meteoroidShootingS;
+}
+
+@keyframes meteoroidShootingS {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(0) translateY(100vh);
+    }
+}
+
+.meteoroid.sw {
+    animation-name: meteoroidShootingSW;
+}
+
+@keyframes meteoroidShootingSW {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(100vh);
+    }
+}
+
+.meteoroid.se {
+    animation-name: meteoroidShootingSE;
+}
+
+@keyframes meteoroidShootingSE {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100vw) translateY(100vh);
+    }
+}
+
+.meteoroid.nw {
+    animation-name: meteoroidShootingNW;
+}
+
+@keyframes meteoroidShootingNW {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100vw) translateY(-100vh);
+    }
+}
+
+.meteoroid.ne {
+    animation-name: meteoroidShootingNE;
+}
+
+@keyframes meteoroidShootingNE {
+    from {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100vw) translateY(-100vh);
+    }
+}
+
+
