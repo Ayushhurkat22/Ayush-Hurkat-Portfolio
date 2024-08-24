@@ -1,222 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,600&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
     <div id="nav">
-        <h4><a href="#page1"></a>Home</h4>
-        <h4><a href="#page2">About Me</a></h4>
-        <h4><a href="#page3">Resume</a></h4>
-        <h4><a href="#page4">Skills</a></h4>
-        <h4><a href="#page5">Contact Me</a></h4>
+      <h4><a href="#page1">Home</a></h4>
+      <h4><a href="#page2">About Me</a></h4>
+      <h4><a href="#page3">Resume</a></h4>
+      <h4><a href="#page4">Skills</a></h4>
+      <h4><a href="#page5">Contact Me</a></h4>
     </div>
 
-    <div id="cursor">
+    <div id="cursor"></div>
 
-    </div>
+    <div id="cursorBlur"></div>
 
-    <div id="cursorBlur">
-
-    </div>
-
-    <video autoplay loop muted src="videoplayback (1).mp4"></video>
+    <video autoplay loop muted src="BGvid.mp4"></video>
 
     <div id="main">
-        <div id="page1">
-            <h1>AYUSH HURKAT</h1>
-            <h2>Iam a <span class="auto-type"></span></h2>
+        <video autoplay loop muted src="BGvid.mp4" class="mainpg"></video>
+        <div id="starry-background"></div>
+        <br><br><br><br>
+      <div id="page1">
+        <h1>AYUSH HURKAT</h1>
+        <br /><br /><br /><br /> <br><br><br><br>
+        <h2>Iam a <span class="auto-type"></span></h2>
+      </div>
+      <div id="page2" class="star-background">
+        <div id="starry-background"></div>
+        <br><br>
+        <div id="about">
+            <div id="starry-background"></div>
+          <h3>ABOUT ME</h3>
         </div>
-        <div id="page2">
-            <!-- <marquee behavior="" direction=""></marquee> -->
-            <div id="scroller">
-                <div id="scroller_in">
-                    <h4>PROGRAMMER</h4>
-                    <h4>CODER</h4>
-                    <h4>WEB DEVELOPER</h4>
-                    <h4>LEARNER</h4>
-                    <h4>TECH GEEK</h4>
-                    <h4>PROBLEM SOLVER</h4>
-                </div>
-                <div id="scroller_in">
-                    <h4>PROGRAMMER</h4>
-                    <h4>CODER</h4>
-                    <h4>WEB DEVELOPER</h4>
-                    <h4>LEARNER</h4>
-                    <h4>TECH GEEK</h4>
-                    <h4>PROBLEM SOLVER</h4>
-                </div>
-            </div>
-            <div id="about">
-                <h3>ABOUT ME</h3>
-            </div>
-            <div id="aboutme">
-                <img src="JEE Main 2021, 2020 and 2019 Previous Year Chapter-wise Questions _ MathonGo - Brave 16-08-2021 10_39_36 AM.png"
-                    alt="">
-                <div id="aboutmedesc">
-                    I am a B.Tech. student in my sixth semester majoring in Information Technology at Madhav Institute
-                    of Technology and Science. I have a firm grasp of multiple programming languages such as C, C++, and
-                    Python, as well as web development technologies like HTML, CSS and Javascript. I am eagerly
-                    anticipating my upcoming pursuit of becoming a Software Developer and Web Developer to further
-                    enhance my skills and contribute to cutting-edge technological solutions. My academic foundation,
-                    combined with practical experience, positions me as a dynamic professional ready to tackle complex
-                    challenges in the industry.
-                </div>
-            </div>
+        <div id="aboutme">
+          <img
+            src="JEE Main 2021, 2020 and 2019 Previous Year Chapter-wise Questions _ MathonGo - Brave 16-08-2021 10_39_36 AM.png"
+            alt=""
+          />
+          <div id="aboutmedesc">
+            I am a B.Tech. student in my sixth semester majoring in Information
+            Technology at Madhav Institute of Technology and Science. I have a
+            firm grasp of multiple programming languages such as C, C++, and
+            Python, as well as web development technologies like HTML, CSS and
+            Javascript. I am eagerly anticipating my upcoming pursuit of
+            becoming a Software Developer and Web Developer to further enhance
+            my skills and contribute to cutting-edge technological solutions. My
+            academic foundation, combined with practical experience, positions
+            me as a dynamic professional ready to tackle complex challenges in
+            the industry.
+          </div>
         </div>
-        <div id="page3">
-            <div id="resume">
-                <h3>RESUME</h3>
+        <br><br><br><br><br>
+        <div id="scroller">
+            <div id="scroller_in">
+              <h4>PROGRAMMER</h4>
+              <h4>CODER</h4>
+              <h4>WEB DEVELOPER</h4>
+              <h4>LEARNER</h4>
+              <h4>TECH GEEK</h4>
+              <h4>PROBLEM SOLVER</h4>
             </div>
-            <div id="resumedisplay">
-                <embed src="Ayush Hurkat Resume.pdf" width="90%" height="1000px" alt="Ayush Hurkat Resume">
+            <div id="scroller_in">
+              <h4>PROGRAMMER</h4>
+              <h4>CODER</h4>
+              <h4>WEB DEVELOPER</h4>
+              <h4>LEARNER</h4>
+              <h4>TECH GEEK</h4>
+              <h4>PROBLEM SOLVER</h4>
             </div>
+          </div>
+      </div>
+      <div id="page3">
+        <div id="resume">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <h3>RESUME</h3>
         </div>
-        <div id="page4">
-            <div id="skills">
-                <h3>SKILLS</h3>
-            </div>
-            <div id="skillset1">
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://www.kindpng.com/picc/m/355-3559027_c-programming-language-logo-clipart-png-download-c.png"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>C</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://ih1.redbubble.net/image.416406976.0438/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u4.jpg"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>C++</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="http://rlv.zcache.com/html_5_logo_sticker-p217757581437730797envb3_400.jpg" alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>HTML</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://tse1.mm.bing.net/th?id=OIP.BqiEhUIGUiRmaqn58h5eGwHaHa&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>CSS</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-0.png" alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>Javascript</h4>
-                    </div>
-                </div>
-            </div>
-            <div id="skillset2">
-
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://tse3.mm.bing.net/th?id=OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>React</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://welovedevs.com/wp-content/uploads/2022/08/c8648d2615084ec3b27e31cdd44ac54762b7cd5a-1000x1000.jpg"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>Mongo DB</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://tse1.mm.bing.net/th?id=OIP.igsTOJNvPT5roAeEEwUn7QAAAA&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>Express.js</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.bPZyL4LA65gU6WXGycc-NAHaIi&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>Node.js</h4>
-                    </div>
-                </div>
-                <div id="skill">
-                    <div id="skillimg">
-                        <img src="https://tse4.mm.bing.net/th?id=OIP.nUYOwBlsmc2xTLmGRzBTCQHaHa&pid=Api&P=0&h=180"
-                            alt="">
-                    </div>
-                    <div id="skillname">
-                        <h4>Python</h4>
-                    </div>
-                </div>
-            </div>
+        <div class="resume-view">
+          <div class="resumeDownload">
+            <a
+              href="https://drive.google.com/file/d/1AHeQ6uyicMZmbMwmEbDz3HNyEnW-_WLQ/view?usp=drive_link"
+              attributes-list
+            >
+              View Ayush's Resume
+            </a>
+          </div>
         </div>
-        <div id="page5">
-            <div id="contactme">
-                <h3>CONTACT ME</h3>
-            </div>
-            <div id="contact">
-                <div id="contactdetails">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.zDsa2MoFeghUwytLWnDKwwHaHa&pid=Api&P=0&h=180" alt="">
-                    <p>+91 7772883105</p>
-                </div>
-                <div id="contactdetails">
-                    <img src="https://static.vecteezy.com/system/resources/previews/012/871/452/original/gmail-icon-google-product-illustration-free-png.png" alt="">
-                    <a href="ayushhurkat.22@gmail.com">ayushhurkat.22@gmail.com</a>
-                </div>
-            </div>
+      </div>
+      <div id="page4">
+        <div id="skills">
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <h3>SKILLS</h3>
         </div>
+        <div id="skillset1">
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://www.kindpng.com/picc/m/355-3559027_c-programming-language-logo-clipart-png-download-c.png"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>C</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://ih1.redbubble.net/image.416406976.0438/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u4.jpg"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>C++</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="http://rlv.zcache.com/html_5_logo_sticker-p217757581437730797envb3_400.jpg"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>HTML</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.BqiEhUIGUiRmaqn58h5eGwHaHa&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>CSS</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-0.png"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>Javascript</h4>
+            </div>
+          </div>
+        </div>
+        <div id="skillset2">
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.VsvOr2Q2d_Ixr1aUDFGmIQHaHC&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>React</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://welovedevs.com/wp-content/uploads/2022/08/c8648d2615084ec3b27e31cdd44ac54762b7cd5a-1000x1000.jpg"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>Mongo DB</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.igsTOJNvPT5roAeEEwUn7QAAAA&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>Express.js</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://tse4.mm.bing.net/th?id=OIP.bPZyL4LA65gU6WXGycc-NAHaIi&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>Node.js</h4>
+            </div>
+          </div>
+          <div id="skill">
+            <div id="skillimg">
+              <img
+                src="https://tse4.mm.bing.net/th?id=OIP.nUYOwBlsmc2xTLmGRzBTCQHaHa&pid=Api&P=0&h=180"
+                alt=""
+              />
+            </div>
+            <div id="skillname">
+              <h4>Python</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page5">
+        <div id="contactme">
+          <h3>CONTACT ME</h3>
+        </div>
+        <div id="contact">
+          <div id="contactdetails">
+            <img
+              src="https://tse2.mm.bing.net/th?id=OIP.zDsa2MoFeghUwytLWnDKwwHaHa&pid=Api&P=0&h=180"
+              alt=""
+            />
+            <p>+91 7772883105</p>
+          </div>
+          <div id="contactdetails">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/012/871/452/original/gmail-icon-google-product-illustration-free-png.png"
+              alt=""
+            />
+            <a href="ayushhurkat.22@gmail.com">ayushhurkat.22@gmail.com</a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["CODER.", "PROGRAMMER.", "DEVELOPER.", "LEARNER."], typeSpeed: 75,
-            backSpeed: 100, loop: true
-        })
+      var typed = new Typed(".auto-type", {
+        strings: ["CODER.", "PROGRAMMER.", "DEVELOPER.", "LEARNER."],
+        typeSpeed: 75,
+        backSpeed: 100,
+        loop: true,
+      });
     </script>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
