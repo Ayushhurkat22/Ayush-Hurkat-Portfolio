@@ -223,7 +223,7 @@ a:link {
     max-width: 280px;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 0 30px 10px greenyellow;
+    box-shadow: 0 0 10px 5px greenyellow;
 }
 
 #aboutmedesc {
@@ -233,7 +233,7 @@ a:link {
     padding: 20px;
     text-align: center;
     border-radius: 15px;
-    box-shadow: 0 0 30px 10px greenyellow;
+    box-shadow: 0 0 20px 10px greenyellow;
     margin-top: 20px;
 }
 
@@ -343,6 +343,154 @@ a:link {
 #page4 {
     margin-top: 150px;
     z-index: 10;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#Projects h3 {
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+    color: #EEEEEE;
+}
+
+#Projects h3::before {
+    content: "PROJECTS";
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    color: black;
+    -webkit-text-stroke: 2px greenyellow;
+    z-index: -1;
+}
+
+#projectBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#projectBox h3{
+    color: greenyellow;
+    font-size: 25px;
+}
+
+.project-card {
+    box-shadow: 0 0 15px 5px greenyellow;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; /* Default to side-by-side layout */
+    align-items: center;
+    max-width: 100%;
+    margin: 10px;
+    color: #EEEEEE;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 40px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-img {
+    flex: 1;
+    padding: 10px;
+}
+
+.project-img img {
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-desc {
+    flex: 2;
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.tech-stack h4{
+    color: greenyellow;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+    #projectBox {
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .project-card {
+        flex-direction: column; /* Stack image and description vertically */
+    }
+
+    .project-img, .project-desc {
+        width: 100%;
+    }
+
+    .project-desc{
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+    #Projects h3 {
+        font-size: 60px;
+    }
+
+    .project-card {
+        max-width: 90%;
+    }
+
+    .project-desc {
+        font-size: 0.9rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+#page5 {
+    margin-top: 150px;
+    z-index: 10;
 }
 
 #skills {
@@ -382,13 +530,6 @@ a:link {
     z-index: 10;
 }
 #skillset2{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 40px;
-    z-index: 10;
-}
-#skillset3{
     display: flex;
     align-items: center;
     justify-content: space-around;
