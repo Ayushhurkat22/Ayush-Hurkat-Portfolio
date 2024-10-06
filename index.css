@@ -4,27 +4,28 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: #EEEEEE;
+
 }
 
 #cursor {
     height: 15px;
     width: 15px;
-    border: 2px solid greenyellow; /* Create a boundary outline */
+    border: 2px solid greenyellow;
     border-radius: 50%;
     position: fixed;
     z-index: 99;
-    pointer-events: none; /* Ensure cursor does not interfere with mouse events */
+    pointer-events: none; 
 }
 
 #cursorBlur {
     height: 200px;
     width: 200px;
-    border: 2px solid greenyellow; /* Matching the border color with the cursor */
+    border: 2px solid greenyellow; 
     border-radius: 50%;
     position: fixed;
     filter: blur(150px);
     z-index: 9;
-    pointer-events: none; /* Ensure blur effect does not interfere with mouse events */
+    pointer-events: none; 
 }
 
 
@@ -57,7 +58,7 @@ video {
     object-fit: cover;
     filter: blur(5px);
     background: rgba(20, 20, 100, 0.5);
-    z-index: 0
+    z-index: 0;
 }
 
 #main {
@@ -235,6 +236,7 @@ a:link {
     border-radius: 15px;
     box-shadow: 0 0 20px 10px greenyellow;
     margin-top: 20px;
+    backdrop-filter: blur(20px);
 }
 
 #aboutmedesc p {
@@ -404,6 +406,7 @@ a:link {
     color: #EEEEEE;
     transition: transform 0.3s ease-in-out;
     margin-bottom: 40px;
+    backdrop-filter: blur(20px);
 }
 
 .project-card:hover {
@@ -447,7 +450,6 @@ a:link {
     color: greenyellow;
 }
 
-/* Responsive styles for tablets */
 @media (max-width: 768px) {
     #projectBox {
         flex-direction: column;
@@ -455,7 +457,7 @@ a:link {
     }
 
     .project-card {
-        flex-direction: column; /* Stack image and description vertically */
+        flex-direction: column;
     }
 
     .project-img, .project-desc {
@@ -469,7 +471,6 @@ a:link {
     }
 }
 
-/* Responsive styles for mobile phones */
 @media (max-width: 480px) {
     #Projects h3 {
         font-size: 60px;
@@ -642,13 +643,13 @@ a:link {
 
 
 #starry-background {
-    position: fixed; /* Make it fixed to stay in place */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1; /* Place it behind the content */
+    z-index: 1; 
 }
 
 .star {
